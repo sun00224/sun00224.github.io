@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aad4cf;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bt1 {
+    position: relative;
+    height: 400px;
+}
+
+.bt1-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bt1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bt1 h1 {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.dh1 ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #e6f3f2;
+    padding: 10px;
+}
+
+.dh1 ul li {
+    position: relative;
+    padding: 0 130px;
+}
+
+.dh1 ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.dh1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.nr1, .nr2, .lx1 {
+    background-color: #e6f3f2;
+    padding: 20px;
+}
+
+.lx1 form {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.nr1-content {
+    display: block;
+    margin-top: 20px;
+}
+
+.nr1-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.nr2 ul {
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group label input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group:last-of-type {
+    display: block;
+}
+
+.form-group:last-of-type p {
+    margin-bottom: 10px;
+}
+
+.form-group:last-of-type label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn-send {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e6f3f2;
+    text-align: right;
+    padding: 20px 0;
+} 
