@@ -1,0 +1,485 @@
+
+/* import Google  'Open Sans' Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* change the font  */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #222
+}
+
+
+ /* requirement "The maximum width of the container is 1200px" */
+.ctn1, .ctn2, .ctn3, .ctn4, .ctn5, .ctn6, .ctn7 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* change h1h2h3 font  */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #222;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+a span {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+
+/* menu background */
+header {
+    background-color: #222;
+    padding: 0;
+}
+
+.ctn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* change the star logo size and position*/
+.tsmlogo {
+    width: 100%;
+    background-color: #c78c06;
+    text-align: left;
+    padding: 10px;
+}
+
+.tsmlogo img {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+}
+
+.aaa1 {
+    width: 100%;
+}
+
+/* make menu column */
+.aaa1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+.aaa1 ul li {
+    margin: 0;
+    width: 100%;
+}
+
+.aaa1 ul li a {
+    display: block;
+    color: #c78c06;
+    padding: 10px 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* change menu "Home" select color */
+.aaa1 ul li:first-child a {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* change menu not select color  */
+.aaa1 ul li a:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* change the search position */
+.aaa2 {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+}
+
+.aaa2 input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+}
+
+/* change the search button size and color */
+.aaa2 button {
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+/* change "Welcome to Three Star Media" part position */
+.ctn2 {
+    position: relative;
+    color: white;
+}
+
+.mbimage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bbb1 {
+    background-color: #222;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* change title "Welcome to Three Star Media" color ,font and position */
+.bbb1 h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.bbb1 p {
+    margin-bottom: 30px;
+}
+
+/* change button "connect with us" color position and font  */
+.bbb1 a {
+    display: inline-block;
+    background-color: #c78c06;
+    color: #222;
+    margin-right: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* "About Us" part style */
+.ctn3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    padding: 20px 0;
+}
+
+.auimage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.auimage img {
+    width: 100%;
+    height: auto;
+}
+
+.ccc1 {
+    padding: 0 15px;
+}
+
+.ccc1 h2 {
+    margin-top: 0;
+}
+
+/* "Our services" part style with use Grid properties */
+.ctn4 {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.ctn4 h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #222;
+    padding-left: 10px;
+}
+
+.ctnn1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+/* each services parts style */
+.dgtt, .mting, .vdop, .webd, .prt {
+    border: 1px solid white;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* each services parts image style  */
+.dtimage img, .mimage img, .vpimage img, .wdimage img, .pimage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* each services parts text style  */
+.abc1, .abc2, .abc3, .abc4, .abc5 {
+    padding: 20px;
+    background-color: #ffe6ac;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.abc1 h3, .abc2 h3, .abc3 h3, .abc4 h3, .abc5 h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.abc1 p, .abc2 p, .abc3 p, .abc4 p, .abc5 p {
+    margin-bottom: 20px;
+    font-size: small;
+    flex: 1;
+}
+
+/* each services parts button style  */
+.abc1 a, .abc2 a, .abc3 a, .abc4 a, .abc5 a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    margin-right: auto;
+}
+
+.abc1 a span, .abc2 a span, .abc3 a span, .abc4 a span, .abc5 a span {
+    margin-left: 10px;
+}
+
+/* "Our Vision" part style */
+.ctn5 {
+    position: relative;
+    color: white;
+}
+
+.visionimage img {
+    width: 100%;
+    height: auto;
+}
+
+.ddd1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ddd1 h2 {
+    color: white;
+}
+
+/* "our vision" part button "Learn More ▶" style  */
+.ddd1 a {
+    display: inline-block;
+    background-color: #222;
+    opacity: 80%;
+    color: white;
+    padding: 20px 25px;
+    border: 2px solid #c78c06;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+}
+
+/* "Our Team" part style */
+.ctn6 {
+    padding: 10px 0;
+}
+
+.ctn6 h2 {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.oteam1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 15px;
+}
+ /* our team part image style  */
+.jdimage, .brimage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.jdimage img, .brimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* "our team" part text style  */
+.johnd, .bobr {
+    background-color: #ffe6ac;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.johnd h3, .bobr h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* "our team" text parts <hr> divider style */
+.johnd hr, .bobr hr {
+    border: none;
+    border-top: 1px solid #c78c06;
+    margin: 10px 0 15px 0;
+    width: 100%;
+}
+
+/* "Contact Us" part style */
+.ctn7 {
+    padding: 10px 0;
+}
+
+.ctn7 h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.suam {
+    margin-bottom: 10px;
+}
+
+.nme, .eml, .msge {
+    margin-bottom: 5px;
+}
+
+.nme label, .eml label, .msge label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.nme input, .eml input, .msge textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #222;
+}
+/* "contact us" part send button style*/
+.suam button {
+    background-color: #222;
+    color: #c78c06;
+    padding: 5px 15px;
+}
+
+/* "Hours of operation" part style  */
+.hoo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.hoo th {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffe6ac;
+    border: 1px solid #222;
+}
+
+.hoo td {
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #222;
+}
+
+/* "Location" part style */
+.lction iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Footer Style */
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 15px 0;
+}
+
+.fter {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+.fter p {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.fter a {
+    color: #c78c06;
+    text-decoration: underline;
+}
